@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="Submit" href="learing.html">
+</head>
+<body>
+    
+    <div class="login-box">
+        <h2>JobKart</h2>
+        <form >
+            <div class="user-box">
+                <input type="text" name="name" required="" id="name">
+                <label>Name of company:</label>
+            </div>
+            <div id="age" class="user-box">
+                <input type="text" name="post"required="" id="post">
+                <label>post:</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="skills" required="" id="skills">
+                <label>skill set required: </label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="education" required="" id="education">
+                <label>educational qualification:</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="adr" required="" id="adr">
+                <label>address:</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="email" required="" id="email">
+                <label>email id:</label>
+            </div>
+            
+        
+    
+            
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                 <a href="frontpg.html" onclick='saveFormData()'type= 'submit'>SUBMIT</button></a>
+                 <SCRIPT>function saveFormData() {
+                    var name = document.getElementById("name").value;
+                    var post = document.getElementById("post").value;
+                    var skills = document.getElementById("skills").value;
+                    var education = document.getElementById("education").value;
+                    var adr = document.getElementById("adr").value;
+                    var email = document.getElementById("email").value;
+        
+                    localStorage.setItem("name", name);
+                    localStorage.setItem("post", post);
+                    localStorage.setItem("skills", skills);
+                    localStorage.setItem("education", education);
+                    localStorage.setItem("adr", adr);
+                    localStorage.setItem("email", email);
+        
+                    window.location.href = "display.html";
+                }</SCRIPT>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

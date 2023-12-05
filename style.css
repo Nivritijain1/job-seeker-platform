@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@600&family=Yatra+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+}
+.front-page{
+    background-image: url(537.png);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header{
+    display: flex;
+    height: 64px;
+}
+header img{
+    align-self: center;
+    justify-self: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;  
+    position: relative;  
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust as needed */
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust as needed */
+    background: #000; /* Adjust as needed */
+    transition: width .3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.front-content{
+    display: flex;
+    width: 100%;
+   height: calc(100vh - 64px);  
+    justify-content: center;
+    
+}
+.textarea{
+    display: flex;
+    text-align: center;
+    height: 100%;
+    width:calc(100% - 607px);
+    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: center;    
+}
+.textarea h1{
+    font-size: 4.0rem;
+}
+.textarea h2{
+    font-size: 3.25rem;
+    color: #EBB956;
+}
+.imagearea{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.imagearea img{
+
+    height: 100%;
+    
+}
+.primarybox{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2% 0 2% 0;
+    
+}
+.secondarybox{
+    height: 250px;
+    width: 250px;
+    border-radius: 40px;
+}
+.pages{
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 95%;
+    height: 93%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    
+}
+#feedbacksect h1, #recruitersect h1{
+    text-align: center;
+    padding: 1%;
+    
+}
+
+/* fonts */
+.textarea h1,.textarea h2{
+    font-family:'Yatra One', sans-serif ;
+}
+.box h1{
+    font-family: 'Yaldevi',sans-serif;
+    font-weight: 600;
+}
+#recruitersect #rec img{
+
+    width:80%;
+    margin-left: 145px;
+
+}
+#feedbacksect #feedbackform img{width:90%;
+margin-left:50px;}

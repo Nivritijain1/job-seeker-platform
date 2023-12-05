@@ -1,0 +1,26 @@
+<html>
+<body>
+<p id="res"></p>
+<script>
+var data =window.location.search;
+var params=new URLSearchParams(data);
+console.log(params);
+var name=params.get('name')
+var post=params.get('post')
+var skills=params.get('skills')
+var education=params.get('education')
+var adr=params.get('adr')
+var email=params.get('email')
+
+var getdata='Name of the company :' +name + '<br>';
+    getdata+='Post: '+post +'<BR>';
+    getdata+='skill set required: '+skills+'<br>';
+    getdata+='educational qualifications'+'<br>';
+    getdata+='Address: '+adr+'<br>'
+    getdata+='Email id: '+email+'<br>'  
+document.getElementById('res').innerHTML=getdata;
+
+name.style.color='red';
+        </script>
+    </body>
+</html>

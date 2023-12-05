@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Page</title>
+    <link rel="stylesheet" href="DISPLAY.CSS">
+</head>
+<body>
+    <h1>!! COMPANIES HIRING !!</h1>
+    <table><DIV class="grid-container">
+    <tr><th >Name of company: </th> <td><span id="displayName"></span></td></tr>
+    <tr><th >Post: </th> <td><span id="displayPost"></span></td></tr>
+    <tr><th >Skill set required: </th><td><span id="displaySkills"></span></td></tr>
+    <tr><th >Educational qualification: </th> <td><span id="displayEducation"></span></td></tr>
+    <tr><th>Address: </th><td><span id="displayAdr"></span></td></tr>
+    <tr><th >Email ID: </th><td><span id="displayEmail"></span></td></tr></DIV>
+
+    <script>
+        
+        var name = localStorage.getItem("name");
+        var post = localStorage.getItem("post");
+        var skills = localStorage.getItem("skills");
+        var education = localStorage.getItem("education");
+        var adr = localStorage.getItem("adr");
+        var email = localStorage.getItem("email");
+
+        
+        document.getElementById("displayName").innerText = name;
+        document.getElementById("displayPost").innerText = post;
+        document.getElementById("displaySkills").innerText = skills;
+        document.getElementById("displayEducation").innerText = education;
+        document.getElementById("displayAdr").innerText = adr;
+        document.getElementById("displayEmail").innerText = email;
+
+    </script>
+
+
+    <A HREF="MAILTO:admin@gmail.com" div class="a2" onclick="showAlert()"> INTERESTED, PLEASE SEND MY CV </A>
+    <A href="frontpg.html" div class="a1"> NOT INTERESTED </A>
+<script>function showAlert(){alert('kindly upload your resume with your credentials')} </script>
+
+</body>
+</html>
